@@ -14,8 +14,7 @@
   "dependencies": {
     "nightwatch": "0.9.20",
     "selenium-server": "3.9.1",
-    "chromedriver": "2.40.0",
-    "nightwatch-html-reporter": "^2.0.2"
+    "chromedriver": "2.40.0"
   },
   "scripts": {
     "test": "./node_modules/.bin/nightwatch -c ./config/nightwatch.conf.js -g specs -e chrome --skiptags headless-fail,page,command",
