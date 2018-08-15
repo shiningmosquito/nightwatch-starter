@@ -1,0 +1,27 @@
+{
+  "name": "nightwatch-starter",
+  "description": "A nightwatch-starter",
+    "author": {
+    "name": "Kimi Huang",
+    "email": "Kimi_Huang@wistron.com"
+  },
+  "license": "None",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shiningmosquito/nightwatch-starter.git"
+  },
+  "version": "0.0.1",
+  "dependencies": {
+    "nightwatch": "0.9.20",
+    "selenium-server": "3.9.1",
+    "chromedriver": "2.40.0",
+    "nightwatch-html-reporter": "^2.0.2"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/nightwatch -c ./config/nightwatch.conf.js -g specs -e chrome --skiptags headless-fail,page,command",
+    "headless": "./node_modules/.bin/nightwatch -c ./config/nightwatch.conf.js -g specs -e headless --skiptags headless-fail,page,command",
+    "headless-fail": "./node_modules/.bin/nightwatch -c ./config/nightwatch.conf.js -g specs -e headless --tag headless-fail",
+    "page": "./node_modules/.bin/nightwatch -c ./config/nightwatch.conf.js -g specs -e chrome --tag page",
+    "command": "./node_modules/.bin/nightwatch -c ./config/nightwatch.conf.js -g specs -e chrome --tag command"
+  }
+}
