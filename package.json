@@ -21,6 +21,7 @@
     "headless": "./node_modules/.bin/nightwatch -c ./config/nightwatch.conf.js -g specs -e headless --skiptags headless-fail,page,command",
     "headless-fail": "./node_modules/.bin/nightwatch -c ./config/nightwatch.conf.js -g specs -e headless --tag headless-fail",
     "page": "./node_modules/.bin/nightwatch -c ./config/nightwatch.conf.js -g specs -e chrome --tag page",
-    "command": "./node_modules/.bin/nightwatch -c ./config/nightwatch.conf.js -g specs -e chrome --tag command"
+    "command": "./node_modules/.bin/nightwatch -c ./config/nightwatch.conf.js -g specs -e chrome --tag command",
+    "pc": "./node_modules/.bin/nightwatch -c ./config/nightwatch.conf.js -g specs -e chrome --tag pc"
   }
 }
